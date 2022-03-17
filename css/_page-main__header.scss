@@ -1,0 +1,185 @@
+@use "variables" as v;
+
+.page-main-header{
+    margin-bottom: 16rem;
+    &__h1{
+        margin-bottom: 10rem;
+    }
+}
+.company-pluses{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    &__item{
+        width: calc((100% - 8rem)/3);
+        padding-bottom: 1.4rem;
+        border-bottom: .1rem solid black;
+        &_less-width{
+            width: 75%;
+        }
+    }
+    &__text{
+        display: inline-block;
+        width: 90%;
+        &_less-width{
+            width: 70%;
+        }
+    }
+}
+
+.main-manuf{
+    margin-bottom: 16rem;
+    &__text-heading{
+        margin-bottom: 10rem;
+    }
+    &__grid{
+        width: 100%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(25.1rem, 1fr));
+        grid-template-rows: repeat(auto-fill,minmax(25.1rem, 1fr));
+        grid-gap: .1rem;
+        grid-auto-rows: 1fr;
+        border: .1rem solid black;
+        background: black;
+    }
+}
+.grid-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #F3EFEA ;
+
+    img{
+        margin-bottom: 2rem;
+    }
+}
+
+.main-history, .main-services{
+    margin-bottom: 16rem;
+    &__h2{
+        margin-bottom: 10rem;
+    }
+    &__main{
+        display: flex;
+    }
+    &__photo{
+        width: 48.8%;
+
+        background-image: url(../../img/photo.jpg);
+        background-position:  center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    &__info-block{
+        width: 51.2%;
+        padding: 6.8rem 0 0 5.3%;
+        display: flex;
+        flex-direction: column;
+       justify-content: center;   
+       background-color: #EBEEEB;
+       
+    }
+    &__text{
+        width: 70%;
+    }
+    &__h3{
+        font-size: 2.4rem;
+        line-height: 3.6rem;
+        margin-bottom: 4rem;
+        & ~ .page__text-p{
+            margin-bottom: 5.2rem;
+        }
+        
+    }
+    &__btn{
+        margin-bottom: 4.8rem;
+    } 
+}
+.main-video{
+    
+    &__wrapper{
+        margin: 10rem auto 20rem auto;
+        position:relative;
+        padding: 0 0 56.25% 0;
+        height:0;
+        overflow:hidden;
+        }
+        iframe,.myvideo object,.myvideo embed {
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        max-height: 70rem;
+        }
+}
+.main-services{
+    margin-bottom: 20rem;
+    &__photo{
+        width: 50%;
+        max-width: 72rem;
+    }
+    &__info-block{
+        width: 50%;
+    }
+    &__one{
+       & .main-services__photo{
+        background-image: url(../../img/serv1.png);
+       }
+        & .main-services__info-block{
+            background-color: #E3DACE;
+        }
+    }
+    &__two{
+        & .main-services__photo{
+         background-image: url(../../img/serv2.png);
+        }
+         & .main-services__info-block{
+             background-color: #D4CDC3;
+         }
+     }
+}
+
+.main-sertif{
+    width: 78.8%;
+    max-width: 116rem;
+    min-height: 59rem;
+    height: 40vw;
+    border: .7rem solid #A1B29F;
+    margin: 0 auto 21rem auto;
+    padding: 1.4rem 1.2rem 1.3rem 1.3rem;
+
+    &__wrapper{
+        width: 100%;
+        height: 100%;
+        border: .1rem solid #715B4B;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__heading{
+        width: 60%;
+        margin: 10% auto 4rem auto;
+        text-align: center;
+    }
+    &__text{
+        display: inline-block;
+        width: 75%;
+        font-size: 2.4rem;
+        line-height: 3.6rem;
+    }
+    &__logo{
+        object-fit: cover;
+        width: 13.2%;
+        height: auto;
+        position: absolute;
+        top: 70%;
+        left: 83%;
+    }
+}

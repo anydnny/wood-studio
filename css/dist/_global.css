@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Open Sans Light";
+  background-color: #F3EFEA;
+}
+
+.page__text-p {
+  font-family: "Open Sans Light", sans-serif;
+  font-weight: 300;
+  line-height: 2.4rem;
+  font-size: 1.8rem;
+  color: #323232;
+}
+
+.page__text-heading {
+  font-family: "Tenor Sans", serif;
+  font-weight: 400;
+  line-height: 5.76rem;
+  font-size: 4.8rem;
+  color: #57463A;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #A1B29F;
+  border: none;
+  width: 33.8%;
+  height: 5vw;
+  max-width: 24.5rem;
+  max-height: 6rem;
+}
+.btn__text {
+  font-family: "Open Sans Light", sans-serif;
+  font-weight: 300;
+  line-height: 2.4rem;
+  font-size: 1.6rem;
+  color: white;
+}
+
+.link {
+  text-decoration: none;
+  color: #323232;
+}
+.link:hover {
+  text-decoration: underline;
+}
+
+.width-80 {
+  width: 80.5%;
+  margin: auto;
+}
+
+.no-margin-bot {
+  margin-bottom: 0;
+}

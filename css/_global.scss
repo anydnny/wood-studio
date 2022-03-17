@@ -1,0 +1,49 @@
+@use "variables" as v;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%;
+    font-family: "Open Sans Light";
+    background-color: #F3EFEA;
+  }
+
+  .page__text-p{
+    @include v.text-styles()
+  }
+  .page__text-heading{
+    @include v.heading-styles()
+  }
+  .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #A1B29F;
+    border: none;
+    width: 33.8%;
+    height: 5vw;
+    max-width: 24.5rem;
+    max-height: 6rem;
+   &__text{
+     @include v.text-styles(1.6rem, white);
+   }
+  }
+  .link{
+    text-decoration: none;
+    color: v.$text-color;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+.width-80{
+  width: 80.5%;
+  margin: auto;
+}
+
+.no-margin-bot{
+  margin-bottom: 0;
+}
